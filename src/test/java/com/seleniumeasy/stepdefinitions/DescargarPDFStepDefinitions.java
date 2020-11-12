@@ -3,6 +3,7 @@ package com.seleniumeasy.stepdefinitions;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
 import com.seleniumeasy.tasks.IngresarPagina;
+import com.seleniumeasy.tasks.NavegarPagina;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
@@ -24,8 +25,7 @@ public class DescargarPDFStepDefinitions {
 
   @Cuando("^navega hasta la autorizacion de tratamiento de datos$")
   public void navega_hasta_la_autorizacion_de_tratamiento_de_datos() {
-
-    // throw new PendingException();
+    theActorCalled("Agus").attemptsTo(NavegarPagina.deSimpleForm());
   }
 
   @Entonces("^descarga la politica en PDF$")

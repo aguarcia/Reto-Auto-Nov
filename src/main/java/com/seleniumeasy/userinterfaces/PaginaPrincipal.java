@@ -5,10 +5,9 @@ import org.openqa.selenium.By;
 
 public class PaginaPrincipal {
 
-    public static final Target LNK_CONTRATO_TRANSPORTE =
-            Target.the("Enlace Contrato de Transporte").located(By.xpath("//a[contains(text(),'Contrato de transporte')]"));
+  public static final Target LNK_CONTRATO_TRANSPORTE =
+      Target.the("Enlace Contrato de Transporte")
+          .located(By.xpath("//a[contains(text(),'Contrato de transporte')]"));
 
-    private PaginaPrincipal(){
-
-    }
+  private PaginaPrincipal() {}
 }
